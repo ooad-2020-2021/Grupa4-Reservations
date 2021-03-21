@@ -47,8 +47,9 @@ Korisnik se prijavljuje na događaj na način da odabere događaj koji želi, a 
 
 **Uređaj za skeniranje** - skenira QR kod prilikom dolaska korisnika (mušterije) na događaj, a zatim šalje odgovarajuću informaciju bazi.
 
-#### Članovi tima:
-Adna Nuspahić, Emin Šarak, Amna Trčalo. 
+
+### *Članovi tima:*
+*Adna Nuspahić, Emin Šarak, Amna Trčalo.*
 
 
 
