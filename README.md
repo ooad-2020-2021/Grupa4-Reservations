@@ -42,7 +42,9 @@ Korisnik se prijavljuje na događaj na način da odabere događaj koji želi, a 
 
 ### Akteri:
 **Administrator/vlasnik objekta** - osoba koja ima mogućnost kreiranja eventa, njegovog modifikovanja, promocije i otkazivanja. Ima uvid u broj registrovanih korisnika na aplikaciji, broj rezervacija, broj otkazanih rezervacija i broj osoba koji je prisustvovao događaju. 
+
 **Korisnik** - ima uvid u nadolazeće događaje, postavlja kriterije na osnovu kojih se događaji filtriraju i prikazuju u recommended sekciji, dobiva notifikacije koje mu omogućavaju lakše praćenje događaja, uvid u nerezervisana mjesta, te mogućnost rezervacije mjesta po želji, kao i otkazivanje rezervacije u bilo kojem trenutku,mogućnost praćenja aktivnosti drugog korisnika njegovim dodavanjem na friend-listu.
+
 **Uređaj za skeniranje** - skenira QR kod prilikom dolaska korisnika (mušterije) na događaj, a zatim šalje odgovarajuću informaciju bazi.
 
 #### Članovi tima:
