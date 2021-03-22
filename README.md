@@ -18,7 +18,7 @@ Korisnik bez registracije ima samo uvid u aktuelne događaje, bez mogućnosti re
 Mogućnost dodavanja drugih korisnika aplikacije na listu prijatelja pomoću njihovog username-a/e-mail čime se dobiva mogućnost pozivanja prijatelja s liste na događaje te pregled događaja na koji su prijatelji prijavljeni. Korisnik također dobiva notifikaciju kada se prijatelj s njegove liste prijavi na neki događaj.
 
 #### Registracija organizatora događaja/vlasnika objekta:
-Vlasnik objekta dobiva posebne login podatke i ulogu administratora čime postaje ovlašten za kreiranje događaja i njihovo brisanje. Vlasnik objekta ima uvid u broj prijavljenih osoba i rezervacije stolova  za svaki događaj. 
+Vlasnik objekta dobiva posebne login podatke i ulogu administratora čime postaje ovlašten za kreiranje događaja i njihovo brisanje. Vlasnik objekta ima uvid u broj prijavljenih osoba i rezervacije stolova za svaki događaj. Nakon završetka događaja, vlasnik ima uvid u recenzije koje su korisnici ostavili za događaj.
 
 #### Registracija događaja / Otkazivanje događaja:
 Registraciju događaja ima pravo izvršiti samo admin. Potrebno je popuniti podatke o događaju (naziv, tip događaja, vrijeme održavanja, detaljan opis događaja), posebne napomene ako ih ima, te opcionalno postaviti dobno ograničenje korisnika koji mogu prisustvovati događaju. Kreiranje novog događaja podrazumijeva navođenje specifikatora na osnovu kojih se odlučuje kojim korisnicima će događaj biti prikazan na dijelu za preporučene događaje. Specifikatori podrazumijevaju hashtag-e, dob korisnika i spol. Na osnovu ovoga korisnici dobivaju notifikacije o nadolazećim događajima iz njihove grupe interesovanja. Notifikacije se isključivo mogu slati do 1h prije početka događaja.
@@ -51,6 +51,7 @@ Korisniku nakon završetka događaja dolazi notifikacija da izvrši recenziju do
 * Recenzija događaja od 1 do 5 nakon završetka
 * Ograničenje na korisnikovu lozinku: minimalan broj znakova je 8, a također moraju biti i velika i mala slova
 * Ograničenje da je korisničko ime jedinstveno
+* Administrator ima uvid u recenzije događaja nakon njegovog završetka
 
 
 ### Akteri:
