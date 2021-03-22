@@ -16,7 +16,8 @@ Korisnik bez registracije ima samo uvid u aktuelne događaje, bez mogućnosti re
 
 #### Interakcija s drugim korisnicima:
 Mogućnost dodavanja drugih korisnika aplikacije na listu prijatelja pomoću njihovog username-a/e-mail čime se dobiva mogućnost pozivanja prijatelja s liste na događaje te pregled događaja na koji su prijatelji prijavljeni. Korisnik također dobiva notifikaciju kada se prijatelj s njegove liste prijavi na neki događaj.
-Registracija organizatora događaja/vlasnika objekta:
+
+#### Registracija organizatora događaja/vlasnika objekta:
 Vlasnik objekta dobiva posebne login podatke i ulogu administratora čime postaje ovlašten za kreiranje događaja i njihovo brisanje. Vlasnik objekta ima uvid u broj prijavljenih osoba i rezervacije stolova  za svaki događaj. 
 
 #### Registracija događaja / Otkazivanje događaja:
