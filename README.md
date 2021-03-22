@@ -1,4 +1,7 @@
-# Grupa4-Reservations
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/73472718/111993331-cc6a6c00-8b16-11eb-80a5-0603e1861f28.jpg">
+</p>
+
 
 ## Aplikacija za rezervaciju događaja u noćnom klubu - *Night algorithm*
 
