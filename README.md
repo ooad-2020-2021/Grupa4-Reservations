@@ -8,7 +8,7 @@ Olakšava organizaciju događaja, njihovo promovisanje i komunikaciju između or
 
 ### Procesi:
 #### Registracija korisnika:
-Pri upotrebi aplikacije korisnik se treba registrovat unošenjem svojih ličnih podataka nakon čega dobiva mogućnost korištenja aplikacije ili odabire opciju da poveže svoj račun sa nekom od postojećih društvenih mreža (google, facebook) čime se preskače proces unošenja ličnih podataka. Korisnik je obavezan navesti starosnu dob i spol. Korisnik također ima opciju upload-a profilne fotografije koju može i naknadno promijeniti nakon čega će doći notifikacija ostalim korisnicima s njegove liste prijatelja da je to učinio. Nakon toga, navodi se lista interesovanja u vidu hashtag-a (koja se naknadno može i modifikovati) na osnovu kojih se filtriraju događaji koji se prikazuju. 
+Pri upotrebi aplikacije korisnik se treba registrovat unošenjem svojih ličnih podataka nakon čega dobiva mogućnost korištenja aplikacije ili odabire opciju da poveže svoj račun sa nekom od postojećih društvenih mreža (google, facebook) čime se preskače proces unošenja ličnih podataka. Pri kreiranju lozinke minimalan broj znakova je 8, a također mora sadržavati i mala i velika slova. Također, korisničko ime je jedinstveno što znači da ako korisnik unese već postojeće ime dolazi mu obavijest da je ime već zauzeto i da mora unijeti novo. Korisnik je obavezan navesti starosnu dob i spol. Korisnik također ima opciju upload-a profilne fotografije koju može i naknadno promijeniti nakon čega će doći notifikacija ostalim korisnicima s njegove liste prijatelja da je to učinio. Nakon toga, navodi se lista interesovanja u vidu hashtag-a (koja se naknadno može i modifikovati) na osnovu kojih se filtriraju događaji koji se prikazuju. 
 Korisnik bez registracije ima samo uvid u aktuelne događaje, bez mogućnosti rezervisanja stola ili uvida koje osobe idu na taj događaj.
 
 #### Interakcija s drugim korisnicima:
@@ -22,13 +22,16 @@ Registraciju događaja ima pravo izvršiti samo admin. Potrebno je popuniti poda
 #### Prijava na događaj / Otkazivanje rezervacije za događaj:
 Korisnik se prijavljuje na događaj na način da odabere događaj koji želi, a zatim odabere za koliko osoba rezerviše događaj te opcionalno navede neku napomenu ako je ima. Korisnik također može vidjeti i sve njegove prijatelje koji idu na isti događaj. Zatim se prikazuje tlocrt prostora gdje su crvenom bojom označeni već zauzeti stolovi, a zelenom bojom označeni slobodni. Korisnik odabire sto koji želi. Ukoliko korisnik ne ispunjava uslov dobnog ograničenja, dobit će upozorenje, te mu rezervacija neće biti prihvaćena. Nakon uspješne rezervacije korisnik dobiva notifikaciju da je rezervacija prihvaćena i QR kod koji se skenira drugim uređajem prilikom dolaska na događaj te se šalje potvrda dolaska na server što predstavlja validaciju njegovog dolaska. Također korisnik u bilo kojem trenutku može otkazati rezervaciju.
 
+#### Recenzija događaja:
+Korisniku nakon završetka događaja dolazi notifikacija da izvrši recenziju događaja. Ocjenom od 1 do 5 ocjenjuje događaj te opcionalno ostavi detljaniji komentar o događaju.
+
 ### Funkcionalnosti:
 * Mogućnost prijave na aplikaciju sa različitim ulogama
 * Lista prijatelja: korisnik može dodati ostale korisnike na svoju listu pomoću njihovog username-a; dodani korisnici mogu prihvatiti ili odbiti taj zahtjev; prihvatanjem zahtjeva međusobno postaju prijatelji
 * Korisnik dobiva “recommended” dio koji se filtrira na osnovu hashtag-a (korisnikovih interesovanja)
 * Korisnik na profilu prijatelja vidi sve događaje na koje je taj prijatelj prijavljen
 * Upload profilne fotografije korisnika
-* Dobivanje notifikacija: korisnik dobiva obavještenje kada ga neko doda na listu prijatelja; obavještenje o skorom početku događaja na koji se prijavio; obavještenje za događaje na osnovu njegovih interesovanja; obavještenje kada prijatelj promijeni profilnu fotografiju; obavještenje kada se prijatelj prijavi na neki događaj
+* Dobivanje notifikacija: korisnik dobiva obavještenje kada ga neko doda na listu prijatelja; obavještenje o skorom početku događaja na koji se prijavio; obavještenje za događaje na osnovu njegovih interesovanja; obavještenje kada prijatelj promijeni profilnu fotografiju; obavještenje kada se prijatelj prijavi na neki događaj; nakon završetka događaja dolazi obavještenje da korisnik izvrši recenziju
 * Ograničenje o dolasku notifikacije do 1h prije početka događaja
 * Uvid u slobodne stolove prilikom rezervacije
 * Ne prihvatanje rezervacije korisnika ukoliko se prijavio na događaj za koji ne ispunjava uslove dobnog ograničenja
@@ -41,6 +44,9 @@ Korisnik se prijavljuje na događaj na način da odabere događaj koji želi, a 
 * Uvid u interesovanje prijatelja za događaj (koji prijatelji idu na koji događaj)
 * Neregistrovani korisnik ima mogućnost uvida u aktuelne događaje
 * Ograničenje za neregistrovane korisnike da ne mogu rezervisati stol ili vidjeti koliko i koje osobe idu na neki događaj
+* Recenzija događaja od 1 do 5 nakon završetka
+* Ograničenje na korisnikovu lozinku: minimalan broj znakova je 8, a također moraju biti i velika i mala slova
+* Ograničenje da je korisničko ime jedinstveno
 
 
 ### Akteri:
