@@ -17,11 +17,11 @@ Korisnik bez registracije ima samo uvid u aktuelne događaje, bez mogućnosti re
 #### Interakcija s drugim korisnicima:
 Mogućnost dodavanja drugih korisnika aplikacije na listu prijatelja pomoću njihovog username-a/e-mail čime se dobiva mogućnost pozivanja prijatelja s liste na događaje te pregled događaja na koji su prijatelji prijavljeni. Korisnik također dobiva notifikaciju kada se prijatelj s njegove liste prijavi na neki događaj.
 
-#### Registracija organizatora događaja/vlasnika objekta:
+#### Registracija vlasnika objekta:
 Vlasnik objekta dobiva posebne login podatke i ulogu administratora čime postaje ovlašten za kreiranje događaja i njihovo brisanje. Vlasnik objekta ima uvid u broj prijavljenih osoba i rezervacije stolova za svaki događaj. Nakon završetka događaja, vlasnik ima uvid u recenzije koje su korisnici ostavili za događaj.
 
 #### Registracija događaja / Otkazivanje događaja:
-Registraciju događaja ima pravo izvršiti samo admin. Potrebno je popuniti podatke o događaju (naziv, tip događaja, vrijeme održavanja, detaljan opis događaja), posebne napomene ako ih ima, te opcionalno postaviti dobno ograničenje korisnika koji mogu prisustvovati događaju. Kreiranje novog događaja podrazumijeva navođenje specifikatora na osnovu kojih se odlučuje kojim korisnicima će događaj biti prikazan na dijelu za preporučene događaje. Specifikatori podrazumijevaju hashtag-e, dob korisnika i spol. Na osnovu ovoga korisnici dobivaju notifikacije o nadolazećim događajima iz njihove grupe interesovanja. Notifikacije se isključivo mogu slati do 1h prije početka događaja.
+Registraciju događaja ima pravo izvršiti samo vlasnik objekta. Potrebno je popuniti podatke o događaju (naziv, tip događaja, vrijeme održavanja, detaljan opis događaja), posebne napomene ako ih ima, te opcionalno postaviti dobno ograničenje korisnika koji mogu prisustvovati događaju. Kreiranje novog događaja podrazumijeva navođenje specifikatora na osnovu kojih se odlučuje kojim korisnicima će događaj biti prikazan na dijelu za preporučene događaje. Specifikatori podrazumijevaju hashtag-e, dob korisnika i spol. Na osnovu ovoga korisnici dobivaju notifikacije o nadolazećim događajima iz njihove grupe interesovanja. Notifikacije se isključivo mogu slati do 1h prije početka događaja.
 
 #### Prijava na događaj / Otkazivanje rezervacije za događaj:
 Korisnik se prijavljuje na događaj na način da odabere događaj koji želi, a zatim odabere za koliko osoba rezerviše događaj te opcionalno navede neku napomenu ako je ima. Korisnik također može vidjeti i sve njegove prijatelje koji idu na isti događaj. Zatim se prikazuje tlocrt prostora gdje su crvenom bojom označeni već zauzeti stolovi, a zelenom bojom označeni slobodni. Korisnik odabire sto koji želi. Ukoliko korisnik ne ispunjava uslov dobnog ograničenja, dobit će upozorenje, te mu rezervacija neće biti prihvaćena. Nakon uspješne rezervacije korisnik dobiva notifikaciju da je rezervacija prihvaćena i QR kod koji se skenira drugim uređajem prilikom dolaska na događaj te se šalje potvrda dolaska na server što predstavlja validaciju njegovog dolaska. Također korisnik u bilo kojem trenutku može otkazati rezervaciju.
@@ -40,22 +40,22 @@ Korisniku nakon završetka događaja dolazi notifikacija da izvrši recenziju do
 * Uvid u slobodne stolove prilikom rezervacije
 * Ne prihvatanje rezervacije korisnika ukoliko se prijavio na događaj za koji ne ispunjava uslove dobnog ograničenja
 * Registracija na događaj
-* CRUD mogućnost nad korisničkom i administratorskom ulogom
-* Registracija događaja s administratorskom ulogom
+* CRUD mogućnost nad korisnikom i vlasnikom objekta 
+* Registracija događaja ako ste vlasnik objekta
 * Skener koji potvrđuje dolazak korisnika (mušterije)
 * Filtriranje aktivnosti po hashtag-u
-* Ažuriranje/brisanje događaja kao administrator
+* Ažuriranje/brisanje događaja kao vlasnik objekta
 * Uvid u interesovanje prijatelja za događaj (koji prijatelji idu na koji događaj)
 * Neregistrovani korisnik ima mogućnost uvida u aktuelne događaje
 * Ograničenje za neregistrovane korisnike da ne mogu rezervisati stol ili vidjeti koliko i koje osobe idu na neki događaj
 * Recenzija događaja od 1 do 5 nakon završetka
 * Ograničenje na korisnikovu lozinku: minimalan broj znakova je 8, a također moraju biti i velika i mala slova
 * Ograničenje da je korisničko ime jedinstveno
-* Administrator ima uvid u recenzije događaja nakon njegovog završetka
+* Vlasnik objekta ima uvid u recenzije događaja nakon njegovog završetka
 
 
 ### Akteri:
-**Administrator/vlasnik objekta** - osoba koja ima mogućnost kreiranja eventa, njegovog modifikovanja, promocije i otkazivanja. Ima uvid u broj registrovanih korisnika na aplikaciji, broj rezervacija, broj otkazanih rezervacija i broj osoba koji je prisustvovao događaju. 
+**Vlasnik objekta** - osoba koja ima mogućnost kreiranja eventa, njegovog modifikovanja, promocije i otkazivanja. Ima uvid u broj registrovanih korisnika na aplikaciji, broj rezervacija, broj otkazanih rezervacija i broj osoba koji je prisustvovao događaju. 
 
 **Korisnik** - ima uvid u nadolazeće događaje, postavlja kriterije na osnovu kojih se događaji filtriraju i prikazuju u recommended sekciji, dobiva notifikacije koje mu omogućavaju lakše praćenje događaja, uvid u nerezervisana mjesta, te mogućnost rezervacije mjesta po želji, kao i otkazivanje rezervacije u bilo kojem trenutku,mogućnost praćenja aktivnosti drugog korisnika njegovim dodavanjem na friend-listu.
 
