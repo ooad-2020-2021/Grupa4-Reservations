@@ -9531,7 +9531,7 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -16,
+											"left": -32,
 											"top": 32,
 											"height": 13
 										},
@@ -9542,11 +9542,11 @@
 												"$ref": "AAAAAAF4ekGp0hSbvSc="
 											},
 											"font": "Arial;13;1",
-											"left": 398.5,
+											"left": 390.5,
 											"top": 398.5,
 											"width": 151,
 											"height": 13,
-											"text": "Prijava drugog korisnika"
+											"text": "Report drugog korisnika"
 										},
 										{
 											"_type": "LabelView",
@@ -9556,7 +9556,7 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -16,
+											"left": -32,
 											"top": 32,
 											"width": 73.67724609375,
 											"height": 13,
@@ -9570,16 +9570,16 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -16,
+											"left": -32,
 											"top": 32,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 393.5,
+									"left": 385.5,
 									"top": 391.5,
-									"width": 161.71533203125,
+									"width": 161,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAF4ekGp0hSc5yE="
@@ -9605,7 +9605,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": -8,
+									"left": -16,
 									"top": 16,
 									"width": 10,
 									"height": 10
@@ -9621,7 +9621,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": -8,
+									"left": -16,
 									"top": 16,
 									"width": 10,
 									"height": 10
@@ -9637,7 +9637,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": -8,
+									"left": -16,
 									"top": 16,
 									"width": 10,
 									"height": 10
@@ -9653,7 +9653,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": -8,
+									"left": -16,
 									"top": 16,
 									"width": 10,
 									"height": 10
@@ -9669,7 +9669,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": -8,
+									"left": -16,
 									"top": 16,
 									"width": 10,
 									"height": 10
@@ -9677,7 +9677,7 @@
 							],
 							"font": "Arial;13;0",
 							"containerChangeable": true,
-							"left": 360,
+							"left": 352,
 							"top": 384,
 							"width": 228,
 							"height": 41,
@@ -9723,7 +9723,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 306,
+									"left": 304,
 									"top": 346,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -9744,7 +9744,7 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 309,
+									"left": 307,
 									"top": 331,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -9765,7 +9765,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 299,
+									"left": 297,
 									"top": 375,
 									"height": 13,
 									"alpha": -1.5707963267948966,
@@ -9787,7 +9787,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 258,
-									"top": 335,
+									"top": 336,
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 30,
@@ -9849,7 +9849,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 354,
+									"left": 349,
 									"top": 356,
 									"height": 13,
 									"alpha": -0.5235987755982988,
@@ -9869,7 +9869,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 355,
+									"left": 350,
 									"top": 343,
 									"height": 13,
 									"alpha": -0.7853981633974483,
@@ -9889,7 +9889,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 353,
+									"left": 348,
 									"top": 384,
 									"height": 13,
 									"alpha": 0.5235987755982988,
@@ -9935,7 +9935,7 @@
 								"$ref": "AAAAAAF4WhktHQaPcuA="
 							},
 							"lineStyle": 1,
-							"points": "230:351;377:383",
+							"points": "230:351;372:383",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAF4ekIK5xgnVEY="
@@ -13025,7 +13025,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Prijava drugog korisnika"
+					"name": "Report drugog korisnika"
 				},
 				{
 					"_type": "UMLActor",
