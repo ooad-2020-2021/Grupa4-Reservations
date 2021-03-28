@@ -54,7 +54,7 @@ Korisniku nakon završetka događaja dolazi notifikacija da izvrši recenziju do
 * Ograničenje da je korisničko ime jedinstveno
 * Vlasnik objekta ima uvid u recenzije događaja nakon njegovog završetka
 * Korisnik ima mogućnost prijave (report) drugog korisnika zbog neprimjerenog sadržaja, zloupotrebe podataka...
-* Administrator odobrava dodavanje novih korisnika i daje posebne login podatke vlasniku objekta
+* Administrator dodaje nove vlasnike objekta i daje im posebne login podatke 
 * Administrator briše korisnikov račun ako dobije više od 3 prijave
 
 
@@ -65,7 +65,7 @@ Korisniku nakon završetka događaja dolazi notifikacija da izvrši recenziju do
 
 **Neregistrovani korisnik** - ima uvid u aktuelne događaje u objektu.
 
-**Administrator** - dodaje nove korisnike te po potrebi briše druge korisnike.
+**Administrator** - dodaje nove vlasnike objekta, te po potrebi briše druge korisnike.
 
 **Uređaj za skeniranje** - skenira QR kod prilikom dolaska korisnika (mušterije) na događaj, a zatim šalje odgovarajuću informaciju bazi.
 
