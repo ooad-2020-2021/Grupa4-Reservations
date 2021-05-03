@@ -1608,7 +1608,7 @@
 											"top": 976,
 											"width": 249.6787109375,
 											"height": 13,
-											"text": "«create»+događaj(naziv: String, id: Integer)",
+											"text": "+kreirajDogađaj(naziv: String, id: Integer)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1625,7 +1625,7 @@
 											"top": 991,
 											"width": 249.6787109375,
 											"height": 13,
-											"text": "«destroy»+otkaziDogađaj()",
+											"text": "+otkaziDogađaj()",
 											"horizontalAlignment": 0
 										}
 									],
@@ -7819,8 +7819,7 @@
 							"_parent": {
 								"$ref": "AAAAAAF4wBq+/JO6lNM="
 							},
-							"name": "događaj",
-							"stereotype": "create",
+							"name": "kreirajDogađaj",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -7848,8 +7847,7 @@
 							"_parent": {
 								"$ref": "AAAAAAF4wBq+/JO6lNM="
 							},
-							"name": "otkaziDogađaj",
-							"stereotype": "destroy"
+							"name": "otkaziDogađaj"
 						}
 					]
 				},
