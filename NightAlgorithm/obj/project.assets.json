@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Adna\\.nuget\\packages\\": {}
+    "C:\\Users\\Sharky\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Adna\\source\\repos\\NightAlgorithm\\NightAlgorithm.csproj",
+      "projectUniqueName": "C:\\Users\\Sharky\\Source\\Repos\\Grupa4-Reservations\\NightAlgorithm\\NightAlgorithm.csproj",
       "projectName": "NightAlgorithm",
-      "projectPath": "C:\\Users\\Adna\\source\\repos\\NightAlgorithm\\NightAlgorithm.csproj",
-      "packagesPath": "C:\\Users\\Adna\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Adna\\source\\repos\\NightAlgorithm\\obj\\",
+      "projectPath": "C:\\Users\\Sharky\\Source\\Repos\\Grupa4-Reservations\\NightAlgorithm\\NightAlgorithm.csproj",
+      "packagesPath": "C:\\Users\\Sharky\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Sharky\\Source\\Repos\\Grupa4-Reservations\\NightAlgorithm\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Adna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Sharky\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
