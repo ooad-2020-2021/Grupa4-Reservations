@@ -1760,7 +1760,7 @@
 											"top": 1111,
 											"width": 193.99072265625,
 											"height": 13,
-											"text": "NotifikacijaContoller"
+											"text": "NotifikacijaController"
 										},
 										{
 											"_type": "LabelView",
@@ -4247,7 +4247,7 @@
 											"top": 1391,
 											"width": 270.5625,
 											"height": 13,
-											"text": "AdminContoller"
+											"text": "AdminController"
 										},
 										{
 											"_type": "LabelView",
@@ -7501,7 +7501,7 @@
 											"top": 2223,
 											"width": 142,
 											"height": 13,
-											"text": "DogađajContoller"
+											"text": "DogađajController"
 										},
 										{
 											"_type": "LabelView",
@@ -8056,9 +8056,9 @@
 											"font": "Arial;13;1",
 											"left": 1565,
 											"top": 1655,
-											"width": 183.5107421875,
+											"width": 188.56982421875,
 											"height": 13,
-											"text": "RegistracijaVlasnikaContoller"
+											"text": "RegistracijaVlasnikaController"
 										},
 										{
 											"_type": "LabelView",
@@ -8091,7 +8091,7 @@
 									"font": "Arial;13;0",
 									"left": 1560,
 									"top": 1648,
-									"width": 193.5107421875,
+									"width": 198.56982421875,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAF5NAyG98Ac0M0="
@@ -8118,7 +8118,7 @@
 									"font": "Arial;13;0",
 									"left": 1560,
 									"top": 1673,
-									"width": 193.5107421875,
+									"width": 198.56982421875,
 									"height": 10
 								},
 								{
@@ -8133,7 +8133,7 @@
 									"font": "Arial;13;0",
 									"left": 1560,
 									"top": 1683,
-									"width": 193.5107421875,
+									"width": 198.56982421875,
 									"height": 10
 								},
 								{
@@ -8173,7 +8173,7 @@
 							"containerChangeable": true,
 							"left": 1560,
 							"top": 1648,
-							"width": 193.5107421875,
+							"width": 198.56982421875,
 							"height": 72,
 							"nameCompartment": {
 								"$ref": "AAAAAAF5NAyG98AbG9M="
@@ -8388,7 +8388,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 1642,
+									"left": 1643,
 									"top": 1740,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -8409,7 +8409,7 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 1627,
+									"left": 1628,
 									"top": 1740,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -8430,7 +8430,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 1671,
+									"left": 1672,
 									"top": 1741,
 									"height": 13,
 									"alpha": -1.5707963267948966,
@@ -8449,7 +8449,7 @@
 								"$ref": "AAAAAAF5NAzubMJV/4w="
 							},
 							"lineStyle": 1,
-							"points": "1657:1775;1657:1720",
+							"points": "1658:1775;1658:1720",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAF5NA0qXMSqs54="
@@ -8489,7 +8489,7 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 512,
+											"left": 496,
 											"top": 928,
 											"height": 13
 										},
@@ -8500,11 +8500,11 @@
 												"$ref": "AAAAAAF5NA1BrMVjIlQ="
 											},
 											"font": "Arial;13;1",
-											"left": 1781,
+											"left": 1773,
 											"top": 1655,
 											"width": 264.06884765625,
 											"height": 13,
-											"text": "LoginVlasnikaContoller"
+											"text": "LoginVlasnikaController"
 										},
 										{
 											"_type": "LabelView",
@@ -8514,7 +8514,7 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 512,
+											"left": 496,
 											"top": 928,
 											"width": 73.67724609375,
 											"height": 13,
@@ -8528,14 +8528,14 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 512,
+											"left": 496,
 											"top": 928,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 1776,
+									"left": 1768,
 									"top": 1648,
 									"width": 274.06884765625,
 									"height": 25,
@@ -8572,7 +8572,7 @@
 												"$ref": "AAAAAAF5V5HSij/vGcQ="
 											},
 											"font": "Arial;13;0",
-											"left": 1781,
+											"left": 1773,
 											"top": 1678,
 											"width": 264.06884765625,
 											"height": 13,
@@ -8581,7 +8581,7 @@
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 1776,
+									"left": 1768,
 									"top": 1673,
 									"width": 274.06884765625,
 									"height": 23
@@ -8606,7 +8606,7 @@
 												"$ref": "AAAAAAF5V5G2Iz7WnEw="
 											},
 											"font": "Arial;13;0",
-											"left": 1781,
+											"left": 1773,
 											"top": 1701,
 											"width": 264.06884765625,
 											"height": 13,
@@ -8615,7 +8615,7 @@
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 1776,
+									"left": 1768,
 									"top": 1696,
 									"width": 274.06884765625,
 									"height": 23
@@ -8631,7 +8631,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 256,
+									"left": 248,
 									"top": 464,
 									"width": 10,
 									"height": 10
@@ -8647,7 +8647,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 256,
+									"left": 248,
 									"top": 464,
 									"width": 10,
 									"height": 10
@@ -8655,7 +8655,7 @@
 							],
 							"font": "Arial;13;0",
 							"containerChangeable": true,
-							"left": 1776,
+							"left": 1768,
 							"top": 1648,
 							"width": 274.06884765625,
 							"height": 71,
@@ -9173,7 +9173,7 @@
 											"top": 1895,
 											"width": 193.2734375,
 											"height": 13,
-											"text": "ObjekatContoller"
+											"text": "ObjekatController"
 										},
 										{
 											"_type": "LabelView",
@@ -12733,7 +12733,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "NotifikacijaContoller",
+					"name": "NotifikacijaController",
 					"ownedElements": [
 						{
 							"_type": "UMLDependency",
@@ -13471,7 +13471,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "AdminContoller",
+					"name": "AdminController",
 					"ownedElements": [
 						{
 							"_type": "UMLDependency",
@@ -14333,7 +14333,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "DogađajContoller",
+					"name": "DogađajController",
 					"ownedElements": [
 						{
 							"_type": "UMLDependency",
@@ -14393,7 +14393,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "RegistracijaVlasnikaContoller",
+					"name": "RegistracijaVlasnikaController",
 					"ownedElements": [
 						{
 							"_type": "UMLDependency",
@@ -14452,7 +14452,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "LoginVlasnikaContoller",
+					"name": "LoginVlasnikaController",
 					"ownedElements": [
 						{
 							"_type": "UMLDependency",
@@ -14542,7 +14542,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "ObjekatContoller",
+					"name": "ObjekatController",
 					"ownedElements": [
 						{
 							"_type": "UMLDependency",
