@@ -3194,6 +3194,23 @@
 									"subViews": [
 										{
 											"_type": "UMLOperationView",
+											"_id": "AAAAAAF5jqfyiHJ3Gcg=",
+											"_parent": {
+												"$ref": "AAAAAAF5Lnjnz6QEP3o="
+											},
+											"model": {
+												"$ref": "AAAAAAF5jqfyd3Juxzw="
+											},
+											"font": "Arial;13;0",
+											"left": 461,
+											"top": 1161,
+											"width": 217.87060546875,
+											"height": 13,
+											"text": "«create»+Objekat(naziv: String)",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
 											"_id": "AAAAAAF5Lnuqja/AoNg=",
 											"_parent": {
 												"$ref": "AAAAAAF5Lnjnz6QEP3o="
@@ -3203,7 +3220,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 461,
-											"top": 1161,
+											"top": 1176,
 											"width": 217.87060546875,
 											"height": 13,
 											"text": "+getNaziv(): String",
@@ -3220,7 +3237,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 461,
-											"top": 1176,
+											"top": 1191,
 											"width": 217.87060546875,
 											"height": 13,
 											"text": "+setNaziv(naziv: String)",
@@ -3237,7 +3254,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 461,
-											"top": 1191,
+											"top": 1206,
 											"width": 217.87060546875,
 											"height": 13,
 											"text": "+getKapacitet(): Integer",
@@ -3254,7 +3271,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 461,
-											"top": 1206,
+											"top": 1221,
 											"width": 217.87060546875,
 											"height": 13,
 											"text": "+setKapacitet(kapacitet: Integer)",
@@ -3271,7 +3288,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 461,
-											"top": 1221,
+											"top": 1236,
 											"width": 217.87060546875,
 											"height": 13,
 											"text": "+getLokacija(): String",
@@ -3288,7 +3305,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 461,
-											"top": 1236,
+											"top": 1251,
 											"width": 217.87060546875,
 											"height": 13,
 											"text": "+setLokacija(lokacija: String)",
@@ -3305,7 +3322,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 461,
-											"top": 1251,
+											"top": 1266,
 											"width": 217.87060546875,
 											"height": 13,
 											"text": "+getBrojTelefona(): String",
@@ -3322,7 +3339,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 461,
-											"top": 1266,
+											"top": 1281,
 											"width": 217.87060546875,
 											"height": 13,
 											"text": "+setBrojTelefona(brojTelefona: String)",
@@ -3339,7 +3356,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 461,
-											"top": 1281,
+											"top": 1296,
 											"width": 217.87060546875,
 											"height": 13,
 											"text": "+getMail(): String",
@@ -3356,7 +3373,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 461,
-											"top": 1296,
+											"top": 1311,
 											"width": 217.87060546875,
 											"height": 13,
 											"text": "+setMail(mail: String)",
@@ -3367,7 +3384,7 @@
 									"left": 456,
 									"top": 1156,
 									"width": 227.87060546875,
-									"height": 158
+									"height": 173
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -3407,7 +3424,8 @@
 							"left": 456,
 							"top": 1048,
 							"width": 227.87060546875,
-							"height": 266,
+							"height": 281,
+							"autoResize": true,
 							"nameCompartment": {
 								"$ref": "AAAAAAF5Lnjnz6P+nCg="
 							},
@@ -8078,8 +8096,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 1051,
-									"top": 1364,
+									"left": 1297,
+									"top": 1333,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -8099,8 +8117,8 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 1036,
-									"top": 1364,
+									"left": 1282,
+									"top": 1333,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -8120,8 +8138,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 1081,
-									"top": 1365,
+									"left": 1327,
+									"top": 1334,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -8138,7 +8156,7 @@
 							"tail": {
 								"$ref": "AAAAAAF5M+l2jdTXmic="
 							},
-							"points": "1066:1776;1066:967",
+							"points": "1137:1792;1312:1792;1312:888;1268:888",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAF5XJLMQLXxgiU="
@@ -12919,6 +12937,26 @@
 						}
 					],
 					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAF5jqfyd3Juxzw=",
+							"_parent": {
+								"$ref": "AAAAAAF5LnjnzqP7o2o="
+							},
+							"name": "Objekat",
+							"stereotype": "create",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAF5jqi7mnObCto=",
+									"_parent": {
+										"$ref": "AAAAAAF5jqfyd3Juxzw="
+									},
+									"name": "naziv",
+									"type": "String"
+								}
+							]
+						},
 						{
 							"_type": "UMLOperation",
 							"_id": "AAAAAAF5Lnuqga+l73o=",
