@@ -700,9 +700,9 @@
 												"$ref": "AAAAAAF5noL/sNNzu7g="
 											},
 											"font": "Arial;13;0",
-											"left": 157,
+											"left": 127,
 											"top": 91,
-											"width": 123.576171875,
+											"width": 182.076171875,
 											"height": 13,
 											"alpha": 1.5707963267948966,
 											"distance": 10,
@@ -710,7 +710,7 @@
 												"$ref": "AAAAAAF5noL/sNN0tVw="
 											},
 											"edgePosition": 1,
-											"text": "1 : kreiranjeDogađaja"
+											"text": "1 : kreirajDogađaj(naziv: String)"
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -1686,7 +1686,7 @@
 							"_parent": {
 								"$ref": "AAAAAAF5nntZLtK/5TQ="
 							},
-							"name": "kreiranjeDogađaja",
+							"name": "kreirajDogađaj(naziv: String)",
 							"source": {
 								"$ref": "AAAAAAF5nn480NLQ+00="
 							},
@@ -1909,7 +1909,8 @@
 					"_parent": {
 						"$ref": "AAAAAAF5nntZLdK+2Mo="
 					},
-					"name": "Role3"
+					"name": "Role3",
+					"type": ""
 				},
 				{
 					"_type": "UMLAttribute",
@@ -1926,7 +1927,8 @@
 					"_parent": {
 						"$ref": "AAAAAAF5nntZLdK+2Mo="
 					},
-					"name": "Role5"
+					"name": "Role5",
+					"type": ""
 				}
 			]
 		}
