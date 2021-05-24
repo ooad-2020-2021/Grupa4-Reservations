@@ -686,9 +686,9 @@
 												"$ref": "AAAAAAF5npuRfQKtG1o="
 											},
 											"font": "Arial;13;0",
-											"left": 152,
+											"left": 116,
 											"top": 128,
-											"width": 109.10986328125,
+											"width": 180.6416015625,
 											"height": 13,
 											"alpha": 2.964882451413474,
 											"distance": 28.442925306655784,
@@ -696,7 +696,7 @@
 												"$ref": "AAAAAAF5npuRfQKuh1E="
 											},
 											"edgePosition": 1,
-											"text": "1 : otkažiDogađaj()"
+											"text": "1 : otkažiDogađaj(naziv: String)"
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -797,9 +797,9 @@
 												"$ref": "AAAAAAF5npxO/gLJMAQ="
 											},
 											"font": "Arial;13;0",
-											"left": 194,
+											"left": 190,
 											"top": 184,
-											"width": 146.7197265625,
+											"width": 155.3779296875,
 											"height": 13,
 											"alpha": 1.5707963267948966,
 											"distance": 10,
@@ -807,7 +807,7 @@
 												"$ref": "AAAAAAF5npxO/gLKVS0="
 											},
 											"edgePosition": 1,
-											"text": "2 : poništavanjeDogađaja"
+											"text": "2 : poništavanjeDogađaja()"
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -1783,7 +1783,7 @@
 							"_parent": {
 								"$ref": "AAAAAAF5nphF1gH6Cdc="
 							},
-							"name": "otkažiDogađaj()",
+							"name": "otkažiDogađaj(naziv: String)",
 							"source": {
 								"$ref": "AAAAAAF5npi29gIKYGc="
 							},
@@ -1797,7 +1797,7 @@
 							"_parent": {
 								"$ref": "AAAAAAF5nphF1gH6Cdc="
 							},
-							"name": "poništavanjeDogađaja",
+							"name": "poništavanjeDogađaja()",
 							"source": {
 								"$ref": "AAAAAAF5npi29gIKYGc="
 							},
@@ -2020,7 +2020,8 @@
 					"_parent": {
 						"$ref": "AAAAAAF5nphF1gH5HOk="
 					},
-					"name": "Role3"
+					"name": "Role3",
+					"type": ""
 				},
 				{
 					"_type": "UMLAttribute",
