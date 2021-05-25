@@ -1692,7 +1692,8 @@
 							},
 							"target": {
 								"$ref": "AAAAAAF5noCZWNLwwyc="
-							}
+							},
+							"messageSort": "asynchCall"
 						},
 						{
 							"_type": "UMLMessage",

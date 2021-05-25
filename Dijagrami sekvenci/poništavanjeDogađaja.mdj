@@ -1803,7 +1803,8 @@
 							},
 							"target": {
 								"$ref": "AAAAAAF5npjlrAIqFd0="
-							}
+							},
+							"messageSort": "asynchCall"
 						},
 						{
 							"_type": "UMLMessage",
