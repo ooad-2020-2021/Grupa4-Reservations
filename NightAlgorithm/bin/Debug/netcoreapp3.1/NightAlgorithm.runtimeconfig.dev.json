@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\Adna\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Adna\\.nuget\\packages"
+      "C:\\Users\\Sharky\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Sharky\\.nuget\\packages"
     ]
   }
 }

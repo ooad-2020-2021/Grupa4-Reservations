@@ -47,5 +47,7 @@ namespace NightAlgorithm.Models
 
             specifikatori.Remove(specifikator);
         }
+
+        #endregion
     }
 }
