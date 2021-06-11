@@ -25,5 +25,15 @@ namespace NightAlgorithm.Data
         public DbSet<NightAlgorithm.Models.RegistrovaniKorisnik> RegistrovaniKorisnik { get; set; }
 
         public DbSet<NightAlgorithm.Models.Objekat> Objekat { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Događaj>().ToTable("Dogadjaj");
+            modelBuilder.Entity<Administrator>().ToTable("Admin");
+            modelBuilder.Entity<Notifikacija>().ToTable("Notifikacija");
+            modelBuilder.Entity<VlasnikObjekta>().ToTable("Vlasnik");
+            modelBuilder.Entity<RegistrovaniKorisnik>().ToTable("RegistrovaniKorisnik");
+            modelBuilder.Entity<Objekat>().ToTable("Objekat");
+        }
     }
 }
