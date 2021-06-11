@@ -27,9 +27,12 @@ namespace NightAlgorithm.Models
         public List<RegistrovaniKorisnik> listaPrijatelja { get;}
         [NotMapped]
         public List<Događaj> rezervisaniDogađaji { get;}
+        #endregion
+        #region Konstruktor
         public RegistrovaniKorisnik() { }
         public RegistrovaniKorisnik(String korisničkoIme, String lozinka, DateTime datumRođenja, String spol)
         {
+            id = GenerišiID();
             this.korisničkoIme = korisničkoIme;
             this.lozinka = lozinka;
             this.datumRođenja = datumRođenja;
@@ -38,7 +41,7 @@ namespace NightAlgorithm.Models
 
         public RegistrovaniKorisnik(String korisničkoIme, String lozinka, DateTime datumRođenja, String spol, List<String> listaInteresovanja, List<RegistrovaniKorisnik> listaPrijatelja, List<Događaj> rezervisaniDogađaji)
         {
-
+            id = GenerišiID();
             this.korisničkoIme = korisničkoIme;
             this.lozinka = lozinka;
             this.datumRođenja = datumRođenja;
@@ -60,7 +63,16 @@ namespace NightAlgorithm.Models
         {
             listaInteresovanja.Add(hashtag);
         }
-
+        public int GenerišiID()
+        {
+            int id = 0;
+            Random generator = new Random();
+            for (int i = 0; i < 10; i++)
+            {
+                id += (int)Math.Pow(10, i) * generator.Next(0, 9);
+            }
+            return id;
+        }
         #endregion
     }
 }

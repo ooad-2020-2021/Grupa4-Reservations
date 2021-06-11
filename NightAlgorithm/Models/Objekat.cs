@@ -22,18 +22,31 @@ namespace NightAlgorithm.Models
         public String brojTelefona { get; set; }
         [Required]
         public String mail { get; set; }
-
+        #endregion
+        #region Konstruktor
         public Objekat() { }
-        public Objekat(String naziv, int kapacitet, String lokacija, String brojTelefona, String mail)
+        public Objekat(String naziv,int kapacitet, String lokacija, String brojTelefona, String mail)
         {
 
+            id = GenerišiID();
             this.naziv = naziv;
             this.kapacitet = kapacitet;
             this.lokacija = lokacija;
             this.brojTelefona = brojTelefona;
             this.mail = mail;
         }
-
+        #endregion
+        #region Metode
+        public int GenerišiID()
+        {
+            int id = 0;
+            Random generator = new Random();
+            for (int i = 0; i < 10; i++)
+            {
+                id += (int)Math.Pow(10, i) * generator.Next(0, 9);
+            }
+            return id;
+        }
         #endregion
     }
 }

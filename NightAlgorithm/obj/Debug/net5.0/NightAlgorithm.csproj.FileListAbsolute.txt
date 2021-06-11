@@ -144,11 +144,6 @@ C:\Users\Sharky\Source\Repos\Grupa4-Reservations\NightAlgorithm\obj\Debug\net5.0
 C:\Users\Sharky\Source\Repos\Grupa4-Reservations\NightAlgorithm\obj\Debug\net5.0\ref\NightAlgorithm.dll
 C:\Users\Sharky\Source\Repos\Grupa4-Reservations\NightAlgorithm\obj\Debug\net5.0\NightAlgorithm.pdb
 C:\Users\Sharky\Source\Repos\Grupa4-Reservations\NightAlgorithm\obj\Debug\net5.0\NightAlgorithm.genruntimeconfig.cache
-C:\Users\Sharky\Source\Repos\Grupa4-Reservations\NightAlgorithm\obj\Debug\net5.0\Razor\Views\RegistracijaDogađaja\Create.cshtml.g.cs
-C:\Users\Sharky\Source\Repos\Grupa4-Reservations\NightAlgorithm\obj\Debug\net5.0\Razor\Views\RegistracijaDogađaja\Delete.cshtml.g.cs
-C:\Users\Sharky\Source\Repos\Grupa4-Reservations\NightAlgorithm\obj\Debug\net5.0\Razor\Views\RegistracijaDogađaja\Details.cshtml.g.cs
-C:\Users\Sharky\Source\Repos\Grupa4-Reservations\NightAlgorithm\obj\Debug\net5.0\Razor\Views\RegistracijaDogađaja\Edit.cshtml.g.cs
-C:\Users\Sharky\Source\Repos\Grupa4-Reservations\NightAlgorithm\obj\Debug\net5.0\Razor\Views\RegistracijaDogađaja\Index.cshtml.g.cs
 C:\Users\Sharky\Source\Repos\Grupa4-Reservations\NightAlgorithm\obj\Debug\net5.0\Razor\Views\Admin\Create.cshtml.g.cs
 C:\Users\Sharky\Source\Repos\Grupa4-Reservations\NightAlgorithm\obj\Debug\net5.0\Razor\Views\Admin\Delete.cshtml.g.cs
 C:\Users\Sharky\Source\Repos\Grupa4-Reservations\NightAlgorithm\obj\Debug\net5.0\Razor\Views\Admin\Details.cshtml.g.cs
@@ -174,3 +169,8 @@ C:\Users\Sharky\Source\Repos\Grupa4-Reservations\NightAlgorithm\obj\Debug\net5.0
 C:\Users\Sharky\Source\Repos\Grupa4-Reservations\NightAlgorithm\obj\Debug\net5.0\Razor\Views\Događaj\Details.cshtml.g.cs
 C:\Users\Sharky\Source\Repos\Grupa4-Reservations\NightAlgorithm\obj\Debug\net5.0\Razor\Views\Događaj\Edit.cshtml.g.cs
 C:\Users\Sharky\Source\Repos\Grupa4-Reservations\NightAlgorithm\obj\Debug\net5.0\Razor\Views\Događaj\Index.cshtml.g.cs
+C:\Users\Sharky\Source\Repos\Grupa4-Reservations\NightAlgorithm\obj\Debug\net5.0\Razor\Views\Objekat\Create.cshtml.g.cs
+C:\Users\Sharky\Source\Repos\Grupa4-Reservations\NightAlgorithm\obj\Debug\net5.0\Razor\Views\Objekat\Delete.cshtml.g.cs
+C:\Users\Sharky\Source\Repos\Grupa4-Reservations\NightAlgorithm\obj\Debug\net5.0\Razor\Views\Objekat\Details.cshtml.g.cs
+C:\Users\Sharky\Source\Repos\Grupa4-Reservations\NightAlgorithm\obj\Debug\net5.0\Razor\Views\Objekat\Edit.cshtml.g.cs
+C:\Users\Sharky\Source\Repos\Grupa4-Reservations\NightAlgorithm\obj\Debug\net5.0\Razor\Views\Objekat\Index.cshtml.g.cs

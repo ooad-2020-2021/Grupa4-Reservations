@@ -14,16 +14,17 @@ namespace NightAlgorithm.Models
         [Key]
         public int id { get; set; }
         [Required]
-        public String ime;
-        
+        public String ime { get; set; }
+        #endregion
+        #region Konstruktor
         public Administrator() { }
         public Administrator(String ime)
         {
 
+            id = GenerišiID();
             this.ime = ime;
         }
         #endregion
-
         #region Metode
         public void dodajVlasnika(String korisničkoIme, int lozinka)
         {
@@ -35,7 +36,16 @@ namespace NightAlgorithm.Models
 
             //izbrisi postojećeg vlasnika 
         }
-
+        public int GenerišiID()
+        {
+            int id = 0;
+            Random generator = new Random();
+            for (int i = 0; i < 10; i++)
+            {
+                id += (int)Math.Pow(10, i) * generator.Next(0, 9);
+            }
+            return id;
+        }
         #endregion
     }
 }

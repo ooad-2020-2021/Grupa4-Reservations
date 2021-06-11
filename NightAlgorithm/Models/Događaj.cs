@@ -26,18 +26,17 @@ namespace NightAlgorithm.Models
         [NotMapped]
         public List<RegistrovaniKorisnik> prijavljeniKorisnici { get; }
         public List<int> recenzije { get; }
-           
+        #endregion
+        #region Konstruktor
         public Događaj() { }
-        public Događaj(int idDogađaja, String nazivDogađaja, DateTime vrijemepočetka)
+        public Događaj(String nazivDogađaja, DateTime vrijemepočetka)
         {
 
-            this.idDogađaja = idDogađaja;
+            this.idDogađaja = GenerišiID();
             this.nazivDogađaja = nazivDogađaja;
             this.vrijemePočetka = vrijemePočetka;
         }
-
         #endregion
-
         #region Metode
 
         public void dodajSpecifikator(String specifikator)
@@ -51,7 +50,16 @@ namespace NightAlgorithm.Models
 
             specifikatori.Remove(specifikator);
         }
-
+        public int GenerišiID()
+        {
+            int id = 0;
+            Random generator = new Random();
+            for (int i = 0; i < 10; i++)
+            {
+                id += (int)Math.Pow(10, i) * generator.Next(0, 9);
+            }
+            return id;
+        }
         #endregion
     }
 }

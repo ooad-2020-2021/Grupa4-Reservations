@@ -18,16 +18,29 @@ namespace NightAlgorithm.Models
         public String tekst { get; set; }
         [Required]
         public RegistrovaniKorisnik primalacNotifikacije;
+        #endregion
+        #region Konstruktor
         public Notifikacija() { }
-        public Notifikacija(int id, String naziv, String tekst, RegistrovaniKorisnik primalacNotifikacije)
+        public Notifikacija(String naziv, String tekst, RegistrovaniKorisnik primalacNotifikacije)
         {
 
-            this.id = id;
+            this.id = GenerišiID();
             this.naziv = naziv;
             this.tekst = tekst;
             this.primalacNotifikacije = primalacNotifikacije;
         }
-
+        #endregion
+        #region Metode
+        public int GenerišiID()
+        {
+            int id = 0;
+            Random generator = new Random();
+            for (int i = 0; i < 10; i++)
+            {
+                id += (int)Math.Pow(10, i) * generator.Next(0, 9);
+            }
+            return id;
+        }
         #endregion
     }
 }
