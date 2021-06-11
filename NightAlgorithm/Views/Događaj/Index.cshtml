@@ -1,0 +1,65 @@
+﻿@model IEnumerable<NightAlgorithm.Models.Događaj>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.nazivDogađaja)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.vrijemePočetka)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tipDogađaja)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.opisDogađaja)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.posebneNapomene)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dobnoOgraničenje)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nazivDogađaja)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.vrijemePočetka)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tipDogađaja)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.opisDogađaja)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.posebneNapomene)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dobnoOgraničenje)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.idDogađaja">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.idDogađaja">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.idDogađaja">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -20,10 +21,13 @@ namespace NightAlgorithm.Models
         public String opisDogađaja { get; set; }
         public String posebneNapomene { get; set; }
         public Boolean dobnoOgraničenje { get; set; }
+        [NotMapped]
         public List<String> specifikatori { get; }
+        [NotMapped]
         public List<RegistrovaniKorisnik> prijavljeniKorisnici { get; }
         public List<int> recenzije { get; }
-
+           
+        public Događaj() { }
         public Događaj(int idDogađaja, String nazivDogađaja, DateTime vrijemepočetka)
         {
 

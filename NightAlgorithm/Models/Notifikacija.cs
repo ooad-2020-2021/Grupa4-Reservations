@@ -18,7 +18,7 @@ namespace NightAlgorithm.Models
         public String tekst { get; set; }
         [Required]
         public RegistrovaniKorisnik primalacNotifikacije;
-
+        public Notifikacija() { }
         public Notifikacija(int id, String naziv, String tekst, RegistrovaniKorisnik primalacNotifikacije)
         {
 

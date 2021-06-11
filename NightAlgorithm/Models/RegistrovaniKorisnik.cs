@@ -12,6 +12,8 @@ namespace NightAlgorithm.Models
         #region Properties
         [Required]
         [Key]
+        public int id { get; set; }
+        [Required]
         public String  korisničkoIme { get; set; }
         [Required]
         public String lozinka { get; set; }
@@ -25,6 +27,7 @@ namespace NightAlgorithm.Models
         public List<RegistrovaniKorisnik> listaPrijatelja { get;}
         [NotMapped]
         public List<Događaj> rezervisaniDogađaji { get;}
+        public RegistrovaniKorisnik() { }
         public RegistrovaniKorisnik(String korisničkoIme, String lozinka, DateTime datumRođenja, String spol)
         {
             this.korisničkoIme = korisničkoIme;

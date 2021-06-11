@@ -8,6 +8,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using NightAlgorithm.Data;
 
 namespace NightAlgorithm
 {
@@ -24,6 +26,9 @@ namespace NightAlgorithm
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddDbContext<NightAlgorithmContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("NightAlgorithmContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

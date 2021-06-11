@@ -1,0 +1,54 @@
+﻿@model NightAlgorithm.Models.Događaj
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Događaj</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.nazivDogađaja)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.nazivDogađaja)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.vrijemePočetka)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.vrijemePočetka)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.tipDogađaja)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.tipDogađaja)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.opisDogađaja)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.opisDogađaja)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.posebneNapomene)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.posebneNapomene)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.dobnoOgraničenje)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.dobnoOgraničenje)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.idDogađaja">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -11,6 +11,8 @@ namespace NightAlgorithm.Models
         #region Properties
         [Required]
         [Key]
+        public int id { get; set; }
+        [Required]
         public String naziv { get; set; }
         [Required]
         public int kapacitet { get; set; }
@@ -21,6 +23,7 @@ namespace NightAlgorithm.Models
         [Required]
         public String mail { get; set; }
 
+        public Objekat() { }
         public Objekat(String naziv, int kapacitet, String lokacija, String brojTelefona, String mail)
         {
 

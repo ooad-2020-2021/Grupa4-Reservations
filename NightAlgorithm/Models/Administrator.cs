@@ -11,8 +11,12 @@ namespace NightAlgorithm.Models
 
         #region Properties
         [Required]
+        [Key]
+        public int id { get; set; }
+        [Required]
         public String ime;
         
+        public Administrator() { }
         public Administrator(String ime)
         {
 
