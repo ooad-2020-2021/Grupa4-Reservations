@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -20,13 +21,13 @@ namespace NightAlgorithm.Controllers
         {
             _context = context;
         }
-
+        [Authorize(Roles = "Korisnik")]
         // GET: RegistrovaniKorisnik
         public async Task<IActionResult> Index()
         {
             return View(await _context.RegistrovaniKorisnik.ToListAsync());
         }
-
+        [Authorize(Roles = "Korisnik")]
         // GET: RegistrovaniKorisnik/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -44,7 +45,7 @@ namespace NightAlgorithm.Controllers
 
             return View(registrovaniKorisnik);
         }
-
+        [Authorize(Roles = "Korisnik")]
         // GET: RegistrovaniKorisnik/Create
         public IActionResult Create()
         {
@@ -66,7 +67,7 @@ namespace NightAlgorithm.Controllers
             }
             return View(registrovaniKorisnik);
         }
-
+        [Authorize(Roles = "Korisnik")]
         // GET: RegistrovaniKorisnik/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -117,6 +118,7 @@ namespace NightAlgorithm.Controllers
             }
             return View(registrovaniKorisnik);
         }
+        [Authorize(Roles = "Korisnik")]
 
         // GET: RegistrovaniKorisnik/Delete/5
         public async Task<IActionResult> Delete(int? id)

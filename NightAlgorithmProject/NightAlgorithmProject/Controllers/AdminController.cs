@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -19,13 +20,13 @@ namespace NightAlgorithm.Controllers
         {
             _context = context;
         }
-
+        [Authorize(Roles = "Administrator")]
         // GET: Admin
         public async Task<IActionResult> Index()
         {
             return View(await _context.Administrator.ToListAsync());
         }
-
+        [Authorize(Roles = "Administrator")]
         // GET: Admin/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -43,7 +44,7 @@ namespace NightAlgorithm.Controllers
 
             return View(administrator);
         }
-
+        [Authorize(Roles = "Administrator")]
         // GET: Admin/Create
         public IActionResult Create()
         {
@@ -65,7 +66,7 @@ namespace NightAlgorithm.Controllers
             }
             return View(administrator);
         }
-
+        [Authorize(Roles = "Administrator")]
         // GET: Admin/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -116,7 +117,7 @@ namespace NightAlgorithm.Controllers
             }
             return View(administrator);
         }
-
+        [Authorize(Roles = "Administrator")]
         // GET: Admin/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {

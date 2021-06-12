@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -43,6 +44,7 @@ namespace NightAlgorithm.Controllers
 
             return View(događaj);
         }
+        [Authorize(Roles = "Vlasnik")]
 
         // GET: Događaj/Create
         public IActionResult Create()
@@ -65,7 +67,7 @@ namespace NightAlgorithm.Controllers
             }
             return View(događaj);
         }
-
+        [Authorize(Roles = "Vlasnik")]
         // GET: Događaj/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -116,7 +118,7 @@ namespace NightAlgorithm.Controllers
             }
             return View(događaj);
         }
-
+        [Authorize(Roles = "Vlasnik")]
         // GET: Događaj/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
@@ -134,7 +136,7 @@ namespace NightAlgorithm.Controllers
 
             return View(događaj);
         }
-
+        
         // POST: Događaj/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
