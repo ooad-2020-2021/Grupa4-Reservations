@@ -16,7 +16,9 @@ namespace NightAlgorithm.Models
         [Required]
         public String korisničkoIme { get; set; }
         [Required]
+        [RegularExpression(@"[A-Z|a-z| ]*", ErrorMessage = "Dozvoljeno je samo korištenje velikih i malih slova i razmaka!")]
         public String lozinka { get; set; }
+        
         #endregion
         #region Konstruktor
         public VlasnikObjekta() { }

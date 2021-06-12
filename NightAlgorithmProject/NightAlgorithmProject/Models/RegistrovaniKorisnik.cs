@@ -16,14 +16,19 @@ namespace NightAlgorithm.Models
         [Required]
         public String  korisničkoIme { get; set; }
         [Required]
+        [RegularExpression(@"[A-Z|a-z| ]*", ErrorMessage = "Dozvoljeno je samo korištenje velikih i malih slova i razmaka!")]
         public String lozinka { get; set; }
         [Required]
+        [RegularExpression(@"[A-Z|a-z|0-9| ]*", ErrorMessage = "Obavezno korištenje velikih i malih slova i brojeva!")]
+
         public DateTime datumRođenja { get; }
         [Required]
         public String spol { get; set; }
         [NotMapped]
+        [Required]
         public List<String> listaInteresovanja { get; }
         [NotMapped]
+        [Required]
         public List<RegistrovaniKorisnik> listaPrijatelja { get;}
         [NotMapped]
         public List<Događaj> rezervisaniDogađaji { get;}

@@ -16,16 +16,26 @@ namespace NightAlgorithm.Models
         [Required]
         public String nazivDogađaja { get; set; }
         [Required]
+        [RegularExpression(@"[A-Z|a-z| ]*", ErrorMessage = "Dozvoljeno je samo korištenje velikih i malih slova i razmaka!")]
         public DateTime vrijemePočetka { get; set; }
+        [Required]
+        [RegularExpression(@"[0-9| ]*")]
+        [Range(0.0,60.0)]
         public String tipDogađaja { get; set; }
+        [Required]
         public String opisDogađaja { get; set; }
+        [Required]
         public String posebneNapomene { get; set; }
         public Boolean dobnoOgraničenje { get; set; }
         [NotMapped]
+      
+        [RegularExpression(@"[0-9]*")]
         public List<String> specifikatori { get; }
         [NotMapped]
+        [Required]
         public List<RegistrovaniKorisnik> prijavljeniKorisnici { get; }
         public List<int> recenzije { get; }
+       
         #endregion
         #region Konstruktor
         public Događaj() { }

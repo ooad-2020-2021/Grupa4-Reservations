@@ -5698,19 +5698,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\amnat\\.nuget\\packages\\": {}
+    "C:\\Users\\Adna\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\amnat\\source\\repos\\NightAlgorithmProject\\NightAlgorithmProject\\NightAlgorithmProject.csproj",
+      "projectUniqueName": "C:\\Users\\Adna\\Source\\Repos\\Grupa4-Reservations\\NightAlgorithmProject\\NightAlgorithmProject\\NightAlgorithmProject.csproj",
       "projectName": "NightAlgorithmProject",
-      "projectPath": "C:\\Users\\amnat\\source\\repos\\NightAlgorithmProject\\NightAlgorithmProject\\NightAlgorithmProject.csproj",
-      "packagesPath": "C:\\Users\\amnat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\amnat\\source\\repos\\NightAlgorithmProject\\NightAlgorithmProject\\obj\\",
+      "projectPath": "C:\\Users\\Adna\\Source\\Repos\\Grupa4-Reservations\\NightAlgorithmProject\\NightAlgorithmProject\\NightAlgorithmProject.csproj",
+      "packagesPath": "C:\\Users\\Adna\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Adna\\Source\\Repos\\Grupa4-Reservations\\NightAlgorithmProject\\NightAlgorithmProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\amnat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Adna\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -15,12 +15,15 @@ namespace NightAlgorithm.Models
         [Required]
         public String naziv { get; set; }
         [Required]
+        [RegularExpression(@"[A-Z|a-z| ]*", ErrorMessage = "Dozvoljeno je samo korištenje velikih i malih slova i razmaka!")]
         public int kapacitet { get; set; }
         [Required]
+        [RegularExpression(@"[0-200]*")]
         public String lokacija { get; set; }
         [Required]
         public String brojTelefona { get; set; }
         [Required]
+        [RegularExpression(@"[0-9| ]*")]
         public String mail { get; set; }
         #endregion
         #region Konstruktor

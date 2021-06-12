@@ -15,6 +15,7 @@ namespace NightAlgorithm.Models
         [Required]
         public String naziv { get; set; }
         [Required]
+        [RegularExpression(@"[A-Z|a-z| ]*", ErrorMessage = "Dozvoljeno je samo korištenje velikih i malih slova i razmaka!")]
         public String tekst { get; set; }
         [Required]
         public RegistrovaniKorisnik primalacNotifikacije;

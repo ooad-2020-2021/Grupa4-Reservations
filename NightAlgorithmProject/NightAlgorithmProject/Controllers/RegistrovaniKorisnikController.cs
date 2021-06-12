@@ -15,6 +15,7 @@ namespace NightAlgorithm.Controllers
     {
         private readonly ApplicationDbContext _context;
 
+
         public RegistrovaniKorisnikController(ApplicationDbContext context)
         {
             _context = context;
