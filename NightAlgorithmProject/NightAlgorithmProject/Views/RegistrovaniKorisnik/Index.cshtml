@@ -12,20 +12,17 @@
 <p>
     Ove informacije će biti vidljive svim korisnicima naše aplikacije. 
 </p>
-<table class="table">
+<table style="color: #ffcd00; "class="table">
     <thead>
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.korisničkoIme)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.datumRođenja)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.spol)
             </th>
             <th></th>
-        </tr>
+        </tr>        
     </thead>
     <tbody>
 @foreach (var item in Model) {
@@ -33,9 +30,7 @@
             <td>
                 @Html.DisplayFor(modelItem => item.korisničkoIme)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.datumRođenja)
-            </td>
+  
             <td>
                 @Html.DisplayFor(modelItem => item.spol)
             </td>

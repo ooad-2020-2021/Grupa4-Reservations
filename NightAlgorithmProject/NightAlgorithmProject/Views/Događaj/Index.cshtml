@@ -1,19 +1,19 @@
 ﻿@model IEnumerable<NightAlgorithm.Models.Događaj>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Događaji";
 }
 
-<h1>Index</h1>
+<h1>Aktuelni događaji</h1>
 
 @if (User.IsInRole("Vlasnik"))
 {
     <p>
-        <a asp-action="Create">Create New</a>
+        <a asp-action="Create">Kreiraj novi događaj</a>
     </p>
 }
 
-<table class="table">
+<table style="color: #ffcd00;"class="table">
     <thead>
         <tr>
             <th>

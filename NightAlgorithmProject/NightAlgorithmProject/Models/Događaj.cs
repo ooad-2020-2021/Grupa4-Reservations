@@ -21,8 +21,8 @@ namespace NightAlgorithm.Models
         [Required]
         
         [DisplayName("Vrijeme početka ")]
-        [RegularExpression(@"[0-9| ]*")]
-        [Range(0.0, 60.0)]
+        
+        
         public DateTime vrijemePočetka { get; set; }
         [Required]
         
