@@ -45,7 +45,6 @@ namespace NightAlgorithm.Controllers
             return View(događaj);
         }
         [Authorize(Roles = "Vlasnik")]
-
         // GET: Događaj/Create
         public IActionResult Create()
         {

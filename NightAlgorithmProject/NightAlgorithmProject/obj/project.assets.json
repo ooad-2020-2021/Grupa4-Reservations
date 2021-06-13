@@ -8842,19 +8842,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\amnat\\.nuget\\packages\\": {}
+    "C:\\Users\\Sharky\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\amnat\\Source\\Repos\\Grupa4-Reservations\\NightAlgorithmProject\\NightAlgorithmProject\\NightAlgorithmProject.csproj",
+      "projectUniqueName": "C:\\Users\\Sharky\\Source\\Repos\\Grupa4-Reservations\\NightAlgorithmProject\\NightAlgorithmProject\\NightAlgorithmProject.csproj",
       "projectName": "NightAlgorithmProject",
-      "projectPath": "C:\\Users\\amnat\\Source\\Repos\\Grupa4-Reservations\\NightAlgorithmProject\\NightAlgorithmProject\\NightAlgorithmProject.csproj",
-      "packagesPath": "C:\\Users\\amnat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\amnat\\Source\\Repos\\Grupa4-Reservations\\NightAlgorithmProject\\NightAlgorithmProject\\obj\\",
+      "projectPath": "C:\\Users\\Sharky\\Source\\Repos\\Grupa4-Reservations\\NightAlgorithmProject\\NightAlgorithmProject\\NightAlgorithmProject.csproj",
+      "packagesPath": "C:\\Users\\Sharky\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Sharky\\Source\\Repos\\Grupa4-Reservations\\NightAlgorithmProject\\NightAlgorithmProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\amnat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Sharky\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8925,7 +8925,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
