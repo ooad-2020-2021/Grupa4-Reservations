@@ -25,6 +25,10 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.id">Uredi</a> |
+    @if (User.IsInRole("Vlasnik"))
+    {
+        <a asp-action="Edit" asp-route-id="@Model.id">Uredi</a> <nobr>|</nobr>
+}
+
     <a asp-action="Index">Nazad na listu</a>
 </div>
