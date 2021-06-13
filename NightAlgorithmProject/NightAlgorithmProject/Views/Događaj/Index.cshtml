@@ -62,13 +62,13 @@
                 <td>
                     @if (User.IsInRole("Vlasnik"))
                     {
-                        <a asp-action="Edit" asp-route-id="@item.idDogađaja">Edit</a> <nobr>| </nobr>
+                        <a asp-action="Edit" asp-route-id="@item.idDogađaja">Uredi</a> <nobr> </nobr>
                     }
 
-                    <a asp-action="Details" asp-route-id="@item.idDogađaja">Details</a> |
+                    <a asp-action="Details" asp-route-id="@item.idDogađaja">Detalji</a> 
                     @if (User.IsInRole("Vlasnik"))
                     {
-                        <a asp-action="Delete" asp-route-id="@item.idDogađaja">Delete</a>
+                        <a asp-action="Delete" asp-route-id="@item.idDogađaja">Obriši</a>
                     }
 
                 </td>

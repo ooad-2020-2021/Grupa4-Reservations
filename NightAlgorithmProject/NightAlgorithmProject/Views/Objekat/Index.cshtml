@@ -54,13 +54,13 @@
             <td>
                 @if (User.IsInRole("Vlasnik"))
                 {
-                    <a asp-action="Edit" asp-route-id="@item.id">Edit</a> <nobr>|</nobr>
+                    <a asp-action="Edit" asp-route-id="@item.id">Uredi</a> <nobr>|</nobr>
                 }
 
-                <a asp-action="Details" asp-route-id="@item.id">Details</a> |
+                <a asp-action="Details" asp-route-id="@item.id">Detalji</a> |
                 @if (User.IsInRole("Vlasnik"))
                 {
-                    <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
+                    <a asp-action="Delete" asp-route-id="@item.id">Obriši</a>
                 }
             </td>
         </tr>
