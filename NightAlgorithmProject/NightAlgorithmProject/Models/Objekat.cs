@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
@@ -13,17 +14,22 @@ namespace NightAlgorithm.Models
         [Key]
         public int id { get; set; }
         [Required]
+        [RegularExpression(@"[A-Z|a-z| ]*", ErrorMessage = "Dozvoljeno je samo korištenje velikih i malih slova i razmaka!")]
+        [DisplayName("Naziv objekta")]
         public String naziv { get; set; }
         [Required]
-        [RegularExpression(@"[A-Z|a-z| ]*", ErrorMessage = "Dozvoljeno je samo korištenje velikih i malih slova i razmaka!")]
+        [RegularExpression(@"[0-200]*")]
+        [DisplayName("Kapacitet")]
         public int kapacitet { get; set; }
         [Required]
-        [RegularExpression(@"[0-200]*")]
+        [DisplayName("Lokacija")]
         public String lokacija { get; set; }
         [Required]
+        [RegularExpression(@"[0-9| ]*")]
+        [DisplayName("Broj telefona")]
         public String brojTelefona { get; set; }
         [Required]
-        [RegularExpression(@"[0-9| ]*")]
+        [DisplayName("E-mail")]
         public String mail { get; set; }
         #endregion
         #region Konstruktor

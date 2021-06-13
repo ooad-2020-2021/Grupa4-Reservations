@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -14,15 +15,20 @@ namespace NightAlgorithm.Models
         [Key]
         public int id { get; set; }
         [Required]
+        [RegularExpression(@"[A-Z|a-z| ]*", ErrorMessage = "Dozvoljeno je samo korištenje velikih i malih slova i razmaka!")]
+        [DisplayName("Korisničko ime")]
         public String  korisničkoIme { get; set; }
         [Required]
-        [RegularExpression(@"[A-Z|a-z| ]*", ErrorMessage = "Dozvoljeno je samo korištenje velikih i malih slova i razmaka!")]
+        [RegularExpression(@"[A-Z|a-z|0-9| ]*", ErrorMessage = "Obavezno korištenje velikih i malih slova i brojeva!")]
+        [DisplayName("Lozinka")]
         public String lozinka { get; set; }
         [Required]
-        [RegularExpression(@"[A-Z|a-z|0-9| ]*", ErrorMessage = "Obavezno korištenje velikih i malih slova i brojeva!")]
+        [DisplayName("Datum rođenja")]
 
         public DateTime datumRođenja { get; }
         [Required]
+        [DisplayName("Spol")]
+        [RegularExpression(@"[m|z|M|Z]*", ErrorMessage ="Za ženski spol unesite slovo z, za muški slovo m!")]
         public String spol { get; set; }
         [NotMapped]
         [Required]

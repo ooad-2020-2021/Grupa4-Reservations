@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
@@ -13,9 +14,11 @@ namespace NightAlgorithm.Models
         [Required]
         public int id { get; set; }
         [Required]
+       
+        [DisplayName("Naslov notifikacije")]
         public String naziv { get; set; }
         [Required]
-        [RegularExpression(@"[A-Z|a-z| ]*", ErrorMessage = "Dozvoljeno je samo korištenje velikih i malih slova i razmaka!")]
+        [DisplayName("Poruka")]        
         public String tekst { get; set; }
         [Required]
         public RegistrovaniKorisnik primalacNotifikacije;

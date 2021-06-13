@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -14,22 +15,31 @@ namespace NightAlgorithm.Models
         [Key]
         public int idDogađaja { get; set; }
         [Required]
+        [DisplayName("Naziv događaja ")]
+        [RegularExpression(@"[A-Z|a-z| ]*", ErrorMessage = "Dozvoljeno je samo korištenje velikih i malih slova i razmaka!")]
         public String nazivDogađaja { get; set; }
         [Required]
-        [RegularExpression(@"[A-Z|a-z| ]*", ErrorMessage = "Dozvoljeno je samo korištenje velikih i malih slova i razmaka!")]
+        
+        [DisplayName("Vrijeme početka ")]
+        [RegularExpression(@"[0-9| ]*")]
+        [Range(0.0, 60.0)]
         public DateTime vrijemePočetka { get; set; }
         [Required]
-        [RegularExpression(@"[0-9| ]*")]
-        [Range(0.0,60.0)]
+        
+        [DisplayName("Vrsta događaja ")]
         public String tipDogađaja { get; set; }
         [Required]
+        [DisplayName("Opis događaja ")]
         public String opisDogađaja { get; set; }
-        [Required]
+        
+        [DisplayName("Posebne napomene ")]
         public String posebneNapomene { get; set; }
+        [DisplayName("Dobno ograničenje ")]
+        [Required]
         public Boolean dobnoOgraničenje { get; set; }
         [NotMapped]
       
-        [RegularExpression(@"[0-9]*")]
+        
         public List<String> specifikatori { get; }
         [NotMapped]
         [Required]

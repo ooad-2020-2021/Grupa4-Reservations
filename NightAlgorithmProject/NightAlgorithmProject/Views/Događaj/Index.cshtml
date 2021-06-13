@@ -6,9 +6,13 @@
 
 <h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+@if (User.IsInRole("Vlasnik"))
+{
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+}
+
 <table class="table">
     <thead>
         <tr>
@@ -34,32 +38,41 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.nazivDogađaja)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.vrijemePočetka)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.tipDogađaja)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.opisDogađaja)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.posebneNapomene)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.dobnoOgraničenje)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.idDogađaja">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.idDogađaja">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.idDogađaja">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nazivDogađaja)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.vrijemePočetka)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.tipDogađaja)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.opisDogađaja)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.posebneNapomene)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.dobnoOgraničenje)
+                </td>
+                <td>
+                    @if (User.IsInRole("Vlasnik"))
+                    {
+                        <a asp-action="Edit" asp-route-id="@item.idDogađaja">Edit</a> <nobr>| </nobr>
+                    }
+
+                    <a asp-action="Details" asp-route-id="@item.idDogađaja">Details</a> |
+                    @if (User.IsInRole("Vlasnik"))
+                    {
+                        <a asp-action="Delete" asp-route-id="@item.idDogađaja">Delete</a>
+                    }
+
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
