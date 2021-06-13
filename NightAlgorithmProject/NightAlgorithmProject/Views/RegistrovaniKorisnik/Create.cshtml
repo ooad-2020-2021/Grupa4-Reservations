@@ -1,12 +1,12 @@
 ﻿@model NightAlgorithm.Models.RegistrovaniKorisnik
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Informcije";
 }
 
-<h1>Create</h1>
+<h1>Unesi informacije o sebi</h1>
 
-<h4>RegistrovaniKorisnik</h4>
+
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -18,9 +18,9 @@
                 <span asp-validation-for="korisničkoIme" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="lozinka" class="control-label"></label>
-                <input asp-for="lozinka" class="form-control" />
-                <span asp-validation-for="lozinka" class="text-danger"></span>
+                <label asp-for="datumRođenja" class="control-label"></label>
+                <input asp-for="datumRođenja" class="form-control" />
+                <span asp-validation-for="datumRođenja" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="spol" class="control-label"></label>

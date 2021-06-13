@@ -1,13 +1,16 @@
 ﻿@model IEnumerable<NightAlgorithm.Models.RegistrovaniKorisnik>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Moj profil";
 }
 
-<h1>Index</h1>
+<h1>Moj profil</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Dodaj informacije o sebi </a>
+</p>
+<p>
+    Ove informacije će biti vidljive svim korisnicima naše aplikacije. 
 </p>
 <table class="table">
     <thead>
@@ -16,7 +19,7 @@
                 @Html.DisplayNameFor(model => model.korisničkoIme)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.lozinka)
+                @Html.DisplayNameFor(model => model.datumRođenja)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.spol)
@@ -31,7 +34,7 @@
                 @Html.DisplayFor(modelItem => item.korisničkoIme)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.lozinka)
+                @Html.DisplayFor(modelItem => item.datumRođenja)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.spol)

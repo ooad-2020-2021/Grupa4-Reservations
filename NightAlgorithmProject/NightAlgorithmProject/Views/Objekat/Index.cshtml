@@ -1,72 +1,67 @@
 ﻿@model IEnumerable<NightAlgorithm.Models.Objekat>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "O objektu";
 }
 
-<h1>Index</h1>
+<h1>Night Algorithm</h1>
 
 @if (User.IsInRole("Vlasnik"))
 {
     <p>
-        <a asp-action="Create">Create New</a>
+        <a asp-action="Create">Promijeni informacije</a>
+
     </p>
-}
+}              
+           
+        
 
-<table class="table">
-    <thead>
+<table style="width: 100%;
+        padding: 80px;
+        margin: 70px;
+        background-color: #161616;
+        color: #f7fd04;
+        border-collapse: separate;
+        border-spacing: 50px 50px;
+        font-size: 20px;">
+    @foreach (var item in Model)
+    {
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.naziv)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.kapacitet)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.lokacija)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.brojTelefona)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.mail)
-            </th>
-            <th></th>
+            <th> @Html.DisplayNameFor(model => model.naziv)</th>
+            <td>@Html.DisplayFor(modelItem => item.naziv)</td>
         </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.naziv)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.kapacitet)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.lokacija)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.brojTelefona)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.mail)
-                </td>
-                <td>
-                    @if (User.IsInRole("Vlasnik"))
-                    {
-                        <a asp-action="Edit" asp-route-id="@item.id">Edit</a> <nobr>|</nobr>
-                    }
 
-                    <a asp-action="Details" asp-route-id="@item.id">Details</a> |
-                    @if (User.IsInRole("Vlasnik"))
-                    {
-                        <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
-                    }
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.kapacitet)</th>
+            <td>@Html.DisplayFor(modelItem => item.kapacitet)</td>
+        </tr>
 
-                </td>
-            </tr>
-        }
-    </tbody>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.lokacija)</th>
+            <td>@Html.DisplayFor(modelItem => item.lokacija)</td>
+        </tr>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.brojTelefona)</th>
+            <td>@Html.DisplayFor(modelItem => item.brojTelefona)</td>
+        </tr>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.mail)</th>
+            <td>@Html.DisplayFor(modelItem => item.mail)</td>
+        </tr>
+        <tr>
+            <th> </th>
+            <td>
+                @if (User.IsInRole("Vlasnik"))
+                {
+                    <a asp-action="Edit" asp-route-id="@item.id">Edit</a> <nobr>|</nobr>
+                }
+
+                <a asp-action="Details" asp-route-id="@item.id">Details</a> |
+                @if (User.IsInRole("Vlasnik"))
+                {
+                    <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
+                }
+            </td>
+        </tr>
+    }
 </table>

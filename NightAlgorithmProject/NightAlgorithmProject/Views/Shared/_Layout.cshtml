@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+<body style="        background-color: #090909;
+        color: #ffcd00;">
+    <header style="background-color: #121212;
+        color: white;">
+        <!--navbar-light bg-white-->
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm  border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">NightAlgorithmProject</a>
+                <a style="color: #ffcd00;"class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">NightAlgorithm</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -20,21 +23,22 @@
                     <partial name="_LoginPartial" />
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <!--text-dark-->
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Događaj" asp-action="Index">Aktuelni događaji</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Događaj" asp-action="Index">Aktuelni događaji</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Objekat" asp-action="Index">O objektu</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Objekat" asp-action="Index">O objektu</a>
                         </li>
                         @if (User.IsInRole("Administrator"))
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="VlasnikObjekta" asp-action="Index">Dodaj vlasnika</a>
+                                <a class="nav-link text-light" asp-area="" asp-controller="VlasnikObjekta" asp-action="Index">Dodaj vlasnika</a>
                             </li>
                         }
 
@@ -42,20 +46,20 @@
 
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="Index">Admin</a>
+                                <a class="nav-link text-light" asp-area="" asp-controller="Admin" asp-action="Index">Admin</a>
                             </li>
-                        } 
+                        }
                         @if (User.IsInRole("Korisnik"))
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="RegistrovaniKorisnik" asp-action="Index">Moj profil</a>
+                                <a class="nav-link text-light" asp-area="" asp-controller="RegistrovaniKorisnik" asp-action="Index">Moj profil</a>
                             </li>
                         }
-                       
-                        @if (User.IsInRole("Korisnik")|| User.IsInRole("Vlasnik"))
+
+                        @if (User.IsInRole("Korisnik") || User.IsInRole("Vlasnik"))
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Notifikacija" asp-action="Index">Notifikacije</a>
+                                <a class="nav-link text-light" asp-area="" asp-controller="Notifikacija" asp-action="Index">Notifikacije</a>
                             </li>
                         }
                     </ul>
