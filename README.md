@@ -4,6 +4,7 @@
 
 
 ## Aplikacija za rezervaciju događaja u noćnom klubu - *Night algorithm*
+Link na stranicu: https://nightalgorithm.azurewebsites.net/
 
 ### Opis teme:
 Aplikacija za rezervaciju aktuelnih događaja u ugostiteljskom objektu. Omogućava kako zakazivanje događaja tako i obavještavanje korisnika o istim i njihovu rezervaciju. 
